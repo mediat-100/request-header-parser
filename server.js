@@ -7,6 +7,8 @@ const express = require('express');
 dotenv.config({ path: './config.env' });
 
 const window = new Window();
+
+// Start express app
 const app = express();
 
 app.get('/api/whoami', (req, res) => {
