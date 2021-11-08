@@ -1,0 +1,20 @@
+{
+  "name": "request-header-parser-microservice",
+  "version": "1.0.0",
+  "description": "An api that shows the ip address, language and software of a system",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Mediat Yusuff",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "ip": "^1.1.5"
+  },
+  "devDependencies": {
+    "window": "^4.2.7"
+  }
+}
