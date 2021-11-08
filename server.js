@@ -1,20 +1,15 @@
-const Window = require('window');
 const dotenv = require('dotenv');
-const ip = require('ip');
-
 const express = require('express');
 
 dotenv.config({ path: './config.env' });
-
-const window = new Window();
 
 // Start express app
 const app = express();
 
 app.get('/api/whoami', (req, res) => {
-  let myIpAddress = ip.address();
-  let myLanguage = window.navigator.language;
-  let mySoftware = window.navigator.userAgent;
+  let myIpAddress = req.ip;
+  let myLanguage = req.get('Accept-Language');
+  let mySoftware = req.get('User-Agent');
   res.json({
     ipaddress: myIpAddress,
     language: myLanguage,

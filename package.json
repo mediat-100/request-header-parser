@@ -11,10 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "ip": "^1.1.5"
-  },
-  "devDependencies": {
-    "window": "^4.2.7"
+    "express": "^4.17.1"
   }
 }
